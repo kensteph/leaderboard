@@ -13,7 +13,7 @@ export default class Leaderboard {
   display() {
     const scoresList = document.querySelector('#scores__list');
     scoresList.innerHTML = '';
-    // Sor the result desc
+    // Sort the result desc
     this.leaders = this.leaders.sort((a, b) => b.score - a.score);
     this.leaders.forEach((leader) => {
       // New li
