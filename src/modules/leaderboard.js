@@ -22,7 +22,7 @@ export default class Leaderboard {
       this.leaders.forEach((leader) => {
         // New li
         const li = document.createElement('li');
-        li.textContent = `${leader.user}  ${leader.score}`;
+        li.textContent = `${leader.user}:  ${leader.score}`;
         scoresList.appendChild(li);
       });
     } catch (error) {

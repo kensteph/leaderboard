@@ -3,7 +3,6 @@ import Leaderboard from './leaderboard.js';
 const myLeaderBoard = new Leaderboard();
 
 const manageUI = () => {
-  myLeaderBoard.display();
   const form = document.querySelector('#form');
   const scoresList = document.querySelector('#scores__list');
   const message = document.querySelector('#message');
@@ -23,7 +22,7 @@ const manageUI = () => {
         const resp = await Leaderboard.addScore(user, score);
         // New li
         const li = document.createElement('li');
-        li.textContent = `${user}  ${score}`;
+        li.textContent = `${user}: ${score}`;
         li.classList.add('new');
         scoresList.appendChild(li);
         // Reset the form
