@@ -1,4 +1,4 @@
-const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/faFVl9qnPPm3DA7rDR1K/scores/';
+const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/F2DOFRJJCqkvT8Dgsat4/scores/';
 
 export default class Api {
   static async post(newPlayer) {
