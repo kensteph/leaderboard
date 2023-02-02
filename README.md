@@ -1,4 +1,6 @@
 <a name="readme-top"></a>
+## Screenshots
+![leaderboard-screenshot](https://user-images.githubusercontent.com/39686386/216351401-e830d38d-c6b0-4c77-87b5-90b1d0bdefd0.png)
 
 <!-- TABLE OF CONTENTS -->
 
@@ -68,7 +70,7 @@
 
 > Here you can visit my live demo :
 
-- [N/A]()
+- https://kensteph.github.io/leaderboard/dist/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
