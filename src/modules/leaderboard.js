@@ -23,7 +23,7 @@ export default class Leaderboard {
       this.leaders = this.leaders.sort((a, b) => b.score - a.score);
       loader.classList.remove('display');
       this.leaders.forEach((leader, position) => {
-        const score = leader.score;
+        const score = +leader.score;
         // New li
         const li = document.createElement('li');
         li.classList.add('score__card');
@@ -34,7 +34,7 @@ export default class Leaderboard {
                 person
               </span> <span>${leader.user}</span>
             </article>
-            <span class="score">${score}</span>`;
+            <span class="score">${score.toFixed(0)}</span>`;
         scoresList.appendChild(li);
       });
     } catch (error) {
