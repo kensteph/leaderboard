@@ -23,7 +23,7 @@ export default class Leaderboard {
       this.leaders = this.leaders.sort((a, b) => b.score - a.score);
       loader.classList.remove('display');
       this.leaders.forEach((leader, position) => {
-        const score = parseInt(leader.score, 10).toLocaleString('en-US');
+        const score = leader.score;
         // New li
         const li = document.createElement('li');
         li.classList.add('score__card');
